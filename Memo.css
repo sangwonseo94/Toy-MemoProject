@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* {
+	margin : 0px;  
+	padding : 0px; 	
+	
+	
+}
+html ,body {
+	height : 100%;
+	font-size: 15px;
+}
+
+.memo-area{
+	
+		height : 100% ; 
+		background-color : #ccdcfb;
+		position : relative;
+}
+.choice {
+ transform: rotate(-45deg);
+}
+
+.memo-note{
+		float : left;
+		margin-top : 15px;
+		margin-left : 15px;
+		top: 10px;
+		left : 10px;
+		width : 160px; height : 180px; box-shadow: 4px 4px 4px -1px #666;
+		border: 1px solid #cde;
+		background : white;
+		overflow : hidden; transition : .5s height;
+}
+.memo-note:active{
+	z-index : 1000;
+}
+.memo-note-close{
+		
+		float : left;
+		margin-top : 15px;
+		margin-left : 15px;
+		top: 10px;
+		left : 10px;
+		width : 160px; height : 20px; box-shadow: 4px 4px 4px -1px #666;
+		border: 1px solid #cde;
+		background : white;
+		overflow : hidden; transition : .5s height;
+}
+
+
+.memo-bar{
+	height : 20px;
+	padding : 1px 3px 0 0 ;
+	background : rgb(252,237,131);
+	border-bottom: solid 1px #ffa;
+	text-align : right;
+	
+}
+
+.memo-edit {
+	height : 158px;
+	background : rgb(252,237,131);
+}
+
+.memo-area>button{
+	position : absolute;
+	top : 4px;
+	right : 4px;
+	padding: 0 5px 0 20px;
+	font-weight: bold;
+	color : #275035;
+	height : 22px;
+	font-size : 12px;
+	cursor : pointer;
+	
+}
+.h20{
+	height : 20px;
+}
+
+.memo-edit-area	{
+	overflow : auto;
+	width : 100%;
+	border : 0;
+	font-weight : bold;
+	min-height : 100%;
+	padding : 4px 8px;
+	resize : none;
+	background : transparent;
+	
+}
+
+.memo-edit-area:focus{
+	background : #fff;
+	box-shadow : 0 0 0 2px #0079bf inset;
+	
+}
